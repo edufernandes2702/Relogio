@@ -1,0 +1,74 @@
+/* Import uma font de sua escolha */
+@import url('https://fonts.googleapis.com/css2?family=Sixtyfour+Convergence&display=swap');
+/*  font-family: "Sixtyfour Convergence", sans-serif; */
+
+/* Criar o reset geral */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sixtyfour Convergence", sans-serif;
+}
+
+body{
+    height: 100vh;
+    background: url('assets/image/relogio-2.webp') center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+}
+
+#date{
+    font-size: 1.6rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: rgb(129, 0, 0);
+    text-transform: uppercase;
+    text-shadow: 2px 2px #000;
+    font-weight: 600;
+}
+
+.relogio{
+    background: #1a1a1a; 
+    background : rgba(0, 0, 0, 0.39);
+    height: 40vh;
+    width: 90%;
+    padding: 0 3%;
+    border-radius: 5px;
+    backdrop-filter: blur(8px);
+    border: 4px solid #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-content: center;
+    border-radius: 1rem;
+}
+
+.relogio div{
+    background-color: #000;
+    width: 90%;
+    margin: 3%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    align-items: center;
+    padding: 5%;
+}
+
+.relogio div span{
+    font-size: 4rem;
+}
+
+.relogio div span.tempo{
+    font-size: 1rem;
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 500px) {
+    .relogio{
+        
+        height: 80vh;
+        width: 70%;
+        
+        flex-direction: column;
+    }
+}
